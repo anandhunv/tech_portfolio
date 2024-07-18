@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaInstagram,  FaLinkedinIn, FaReact, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiNodedotjs, SiMongodb } from "react-icons/si";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -10,14 +10,13 @@ const Media = () => {
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
+              <FaFacebookF />
+            </span>
+            <span className="bannerIcon">
+              <FaTwitter />
+            </span>
+            <span className="bannerIcon">
               <FaLinkedinIn />
-            </span>
-            <span className="bannerIcon">
-              <FaGithub />
-            </span>
-            <span className="bannerIcon">
-            <FaInstagram />
-
             </span>
           </div>
         </div>
@@ -26,17 +25,17 @@ const Media = () => {
             BEST SKILL ON
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon" title='React Js'>
+            <span className="bannerIcon">
               <FaReact />
             </span>
-            <span className="bannerIcon" title='Node JS'>
-              <SiNodedotjs/>
+            <span className="bannerIcon">
+              <SiNextdotjs />
             </span>
-            <span className="bannerIcon" title='Tailwind CSS'>
+            <span className="bannerIcon">
               <SiTailwindcss />
             </span>
-            <span className="bannerIcon" title='MongoDb'>
-              <SiMongodb />
+            <span className="bannerIcon">
+              <SiFigma />
             </span>
           </div>
         </div>

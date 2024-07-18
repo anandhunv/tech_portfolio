@@ -1,42 +1,48 @@
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { AiFillDatabase} from "react-icons/ai";
+
+import { FaLightbulb} from "react-icons/fa";
+import { FaComputer } from "react-icons/fa6";
+import { GrMultimedia } from "react-icons/gr";
+import {  SiAntdesign } from "react-icons/si";
+import {  TbApiApp } from "react-icons/tb";
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaComputer/>,
+
+    title: "Full-Stack Development",
+    des: "Develop end-to-end web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) to create a seamless and efficient user experience.",
   },
   {
     id: 2,
-    icon: <AiFillAppstore />,
-    title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <SiAntdesign />,
+    title: "Frontend Development",
+    des:"Build dynamic and responsive UIs with React.js, using components, state management (Redux or Context API), and integrating with backend services."
   },
   {
     id: 3,
-    icon: <SiProgress />,
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <AiFillDatabase/>,
+    title: "Backend Development",
+    des: "Design and develop RESTful APIs using Node.js and Express.js, ensuring secure and efficient server-side operations and seamless integration with frontend applications.",
   },
   {
     id: 4,
-    icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <TbApiApp />,
+    title: "API Development and Integration",
+    des: "Create and integrate APIs for seamless communication between frontend and backend.",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <GrMultimedia />,
+    title: "Multimedia Editing",
+    des: "Edit and produce engaging video content and create high-quality images",
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaLightbulb />,
+    title: "Continuous Learning",
+    des: "Stay updated with the latest industry trends, technologies, and best practices to continuously improve and innovate in software development.",
   },
 ];

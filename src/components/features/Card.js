@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiArrowRight } from "react-icons/hi";
+// import { HiArrowRight } from "react-icons/hi";
 
 const Card = ({item:{title,des,icon}}) => {
   return (
@@ -9,13 +9,13 @@ const Card = ({item:{title,des,icon}}) => {
           <div className="w-10 h-8 flex flex-col justify-between">
         
             {icon ? (
-              <span className="text-5xl text-designColor">{icon}</span>
+              <span className="text-5xl text-amber-400">{icon}</span>
             ) : (
               <>
-                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
-                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
-                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
-                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg text-amber-400 inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg text-amber-400 inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg text-amber-400 inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg text-amber-400 inline-flex"></span>
               </>
             )}
           </div>
@@ -25,7 +25,7 @@ const Card = ({item:{title,des,icon}}) => {
             </h2>
             <p className="base">{des}</p>
             <span className="text-2xl text-designColor">
-              <HiArrowRight />
+              {/* <HiArrowRight /> */}
             </span>
           </div>
         </div>

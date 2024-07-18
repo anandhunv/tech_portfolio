@@ -4,6 +4,7 @@ import Education from './Education';
 import Skills from './Skills';
 import Achievement from './Achievement';
 import Experience from "./Experience"
+// import SoftSkill from './SoftSkill';
 
 const Resume = () => {
    const [educationData, setEducationData] = useState(true);
@@ -13,7 +14,7 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
+        <Title title="EMERGING SOFTWARE DEVELOPER" des="My Resume" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
@@ -26,7 +27,7 @@ const Resume = () => {
             }
             className={`${
               educationData
-                ? "border-designColor rounded-lg"
+                ? "border-amber-400 rounded-lg"
                 : "border-transparent"
             } resumeLi`}
           >
@@ -54,11 +55,12 @@ const Resume = () => {
             }
             className={`${
               experienceData
-                ? "border-designColor rounded-lg"
+                ? "border-amber-400 rounded-lg"
                 : "border-transparent"
             } resumeLi`}
           >
-            Experience
+          
+            Soft Skills
           </li>
           <li
             onClick={() =>
@@ -69,7 +71,7 @@ const Resume = () => {
             }
             className={`${
               achievementData
-                ? "border-designColor rounded-lg"
+                ? "border-amber-400 rounded-lg"
                 : "border-transparent"
             } resumeLi`}
           >
@@ -79,6 +81,8 @@ const Resume = () => {
       </div>
       {educationData && <Education />}
       {skillData && <Skills />}
+      {/* {skillData && <SoftSkill />} */}
+
       {achievementData && <Achievement />}
       {experienceData && <Experience />}
  
